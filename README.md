@@ -98,6 +98,7 @@ Used on scripts only. "Signs" the script using your Roblox UserID and the dateti
 No selection vs. Selection of an instance before clicking "New Salt"
 
 # Technical Detail (Scanners)
+## HashCheck
 The hash check scanner simply verifies if the hash signature is valid.
 Hash generation and user signature is a blend of attributes:
 - Script name
@@ -108,12 +109,15 @@ Hash generation and user signature is a blend of attributes:
 
 If any of these are changed, the signature will be invalid and the scanner will pick it up again.
 
+## FlexRules
 This scanner tries to match for certain code patterns rather than direct entries. The scanner is smart enough to ignore comments. Some checks include keyword checks, variable assignment checking, and common obfuscation string checks. The majority of detections will be done using FlexRules.
 
+## OutlierCheck
 This scanner looks at the script properties and checks for any anomalies, such as suspicious Parents, RunContext, and script size. This system will prevent most backdoors from hiding inside hidden services.
 
 To remove scripts from hidden services, you can run a command line, or enable the service to be visible in studio and delete the script.
 
+## NameCheck
 This scanner simply matches names to a list of virus names. It also detects for deviations in naming format (for example, using unknown characters)
 ```text
   -------------------------- BEGAN SCAN [1.0.0] --------------------------
