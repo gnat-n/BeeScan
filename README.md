@@ -1,5 +1,5 @@
 # BeeScan 1.0.0
-# [DevForum](https://devforum.roblox.com/t/beescan-100-instance-scanner-for-backdoor-detection/3004906) | [Roblox](https://create.roblox.com/store/asset/5240105231/BeeScan)
+# [DevForum](https://devforum.roblox.com/t/post/3004906) | [Roblox](https://create.roblox.com/store/asset/5240105231/BeeScan)
 
 # About
 BeeScan is powerful game instance scanner for backdoors detection. It is a one click solution that most developers can use to get a quick health check on their games. It's designed to detect hidden scripts, obfuscation attempts, and illegal access to global functions by reading the script content.
