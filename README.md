@@ -120,7 +120,7 @@ If any of these are changed, the signature will be invalid and the scanner will 
 
 
 ## FlexRules
-This scanner tries to match for certain code patterns rather than direct entries. The scanner is smart enough to ignore comments. Some checks include keyword checks, variable assignment checking, and common obfuscation string checks. The majority of detections will be done using FlexRules.
+Short for "Flexible Rules", this scanner tries to match for certain code patterns rather than direct entries. The scanner is smart enough to ignore comments. Some checks include keyword checks, variable assignment checking, and common obfuscation string checks. The majority of detections will be done using FlexRules.
 
 ```text
   -------------------------- BEGAN SCAN [1.0.0] --------------------------
