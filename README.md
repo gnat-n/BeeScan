@@ -2,7 +2,7 @@
 # [DevForum](https://devforum.roblox.com/t/beescan-100-instance-scanner-for-backdoor-detection/3004906) | [Roblox](https://create.roblox.com/store/asset/5240105231/BeeScan)
 
 # About
-BeeScan is powerful game instance scanner for backdoors detection. It is a one click solution that most developers can use to get a quick health check on their games. It's designed to detect hidden scripts, obfuscation attempts, and illegal access to global functions by reading the script content. **To make this system passive, this plugin does NOT modify/remove scripts.** It is the users job to resolve the flags (usually by deleting the script).
+BeeScan is powerful game instance scanner for backdoors detection. It is a one click solution that most developers can use to get a quick health check on their games. It's designed to detect hidden scripts, obfuscation attempts, and illegal access to global functions by reading the script content.
 
 # Features:
 
@@ -171,9 +171,12 @@ This plugin is intended for Roblox Studio. This plugin is made to stop bad actor
 **This plugin does NOT modify/remove the scripts.** This is because I don't want to disrupt development because of false positives. This plugin simply finds script violations for you. It is your job to remove it.
 
 ## Limitations
-This plugin, like most security systems, will eventually become out of date unless it's periodically updated.
+- This plugin, like most security systems, will eventually become out of date unless it’s periodically updated.
 
-Do not assume flagged scripts are BAD. Treat flagged scripts as "suspicious" unless you can confirm it's safe. The system tends to be trigger happy.
+- **To make this system passive, this plugin does NOT modify/remove scripts.** It is the users job to resolve the flags (usually by deleting the script). This is because I don’t want to disrupt development because of false positives. This plugin simply finds script violations for you. It is your job to remove it.
+
+- Do not assume flagged scripts are BAD. Treat flagged scripts as “suspicious” unless you can confirm it’s safe. The system tends to be trigger happy.
+
 
 # FAQ
 ### My friend hashed a script and verified it was good, but my BeeScan is showing a hash mismatch on that script?
